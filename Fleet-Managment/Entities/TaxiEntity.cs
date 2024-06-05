@@ -11,7 +11,7 @@ namespace Fleet_Managment.Entities
         [Column("plate")]
         public string Plate { get; set; }
 
-        // Navigation property
+        // Navigation property (relationship)
         public virtual ICollection<TrajectoryEntity> Trajectories { get; set; }
     }
 }
